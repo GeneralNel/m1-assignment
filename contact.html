@@ -26,6 +26,39 @@
         </div>
       </header>
 
+      <main>
+        <h2>Interested to adopt?</h2>
+        <h1>Contact Us</h1>
+        <p>
+          Please fill out the form below and we will get back to you as soon as
+          possible.
+        </p>
+        <form action="/contactForm" method="post">
+          <fieldset>
+            <legend>User Personal Information</legend>
+            <label>Enter your full name</label><br />
+            <input type="text" name="name" /><br />
+            <label>Enter your email address</label><br />
+            <input type="email" name="email" /><br />
+            <label>Enter your phone</label><br />
+            <input type="text" name="phone" /><br />
+            <br /><label>Select your gender</label><br />
+            <input type="radio" name="gender" value="male" />Male
+            <input type="radio" name="gender" value="female" />Female <br />
+            <br /><label>How should we contact you?</label><br />
+            <select>
+              <option>Email</option>
+              <option>Phone</option>
+            </select>
+            <br />
+            <br />Which pet are you interested in adopting?<br />
+            <input type="text" name="pet" /><br />
+            <br />Any questions/feedback?<br />
+            <textarea rows="5" cols="30"></textarea><br />
+            <input type="submit" value="Submit" />
+          </fieldset>
+        </form>
+      </main>
 
       <footer>
         <div id="nondisclaimer">
