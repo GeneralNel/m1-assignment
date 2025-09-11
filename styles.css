@@ -151,6 +151,123 @@ main {
     text-align: center;
 }
 
+/* Table Styles */
+
+table {
+    width: 100%;
+    margin: 30px 0;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+caption {
+    font-size: 1.3em;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 15px;
+}
+
+thead {
+    background: #764ba2;
+    color: white;
+}
+
+th,
+td {
+    padding: 15px;
+    text-align: left;
+}
+
+th {
+    font-weight: bold;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f1f3f4;
+}
+
+/* Form Styles */
+
+form {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    margin: 30px 0;
+}
+
+fieldset {
+    border: 2px solid #3498db;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+legend {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #2c3e50;
+    padding: 0 10px;
+    background: white;
+}
+
+label {
+    margin: 15px 0 5px 0;
+    font-weight: bold;
+    color: #34495e;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+input[type="radio"] {
+    margin: 0 10px 0 10px;
+    width: 20px
+}
+
+input[type="submit"] {
+    background: purple;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 25px;
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+input[type="submit"]:hover {
+    background-color: blueviolet
+}
+
+textarea {
+    min-height: 100px;
+}
+
+/* Footer Styles */
+
+footer {
+    background: #2c3e50;
+    color: white;
+    padding: 30px;
+    border-radius: 10px;
+    margin-top: 50px;
+}
+
+#nondisclaimer {
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
 .copy p {
     color: #ecf0f1;
     text-align: left;
