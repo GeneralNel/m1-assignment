@@ -66,9 +66,8 @@
             var fileNames = []; //Declare an empty element to store image file names
             var imageList = []; //Declare an empty array to store html list that contain an image
             var image; //Declare an empty variable to store the assembled image list codes
-            var openList = '<li>'; //Declare a variable to contain open list tag
+            var openList = "<li id='photo"; //Declare a variable to contain open list tag
             var closeList = '</li>'; //Declare a variable to contain close list tag
-            var identifierAttribute = "class='photo' "; //Declare a variable to contain image attribute
             var openCaptionTag = "<div class='caption'>"; //Declare a variable to contain open caption tag
             var closeCaptionTag = "</div>"; //Declare a variable to contain close caption tag
             var openDescTag = "<div class='description'>"; //Declare a variable to contain open description tag
@@ -90,10 +89,10 @@
             //Create a loop to create 10 images starting with index of 0
             for (var i = 0; i < 10; i++) {
                 fileNames.push("pet (" + (i + 1) + ")"); //create image file name
-                photos.push("<img src='images/pets/" + fileNames[i] + ".jpg' " + identifierAttribute + ">"); //assemble image code
+                photos.push("<img src='images/pets/" + fileNames[i] + ".jpg'>"); //assemble image code
                 captions.push(openCaptionTag + captionTexts[i] + closeCaptionTag); //assemble caption
                 descriptions.push(openDescTag + descTexts[i] + closeDescTag); //assemble description
-                galleryItem = openList + photos[i] + descriptions[i] + captions[i] + closeList; //assemble image list code
+                galleryItem = openList + (i + 1) + "'>" + photos[i] + descriptions[i] + captions[i] + closeList; //assemble image list code
                 imageList.push(galleryItem); //Store(push) the assembled list code
             }
 
