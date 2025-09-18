@@ -28,10 +28,14 @@
         <main>
             <img src="images/pets.jpg" alt="Pets Image" width="800" />
             <h1>Gallery</h1>
-            
+
             <p>
-                Check out some of the most adorable pets that have found their forever homes through our adoption center!
+                Check out some of the most adorable pets that have found their forever homes through our adoption
+                center!
             </p>
+            <ul id="gallery">
+                <!-- pet images will be added here by JavaScript -->
+            </ul>
         </main>
 
         <footer>
@@ -56,7 +60,28 @@
     </div>
     <script>
         // Javascript code to add images
+        function addPetGallery() {
+            var photos = []; //Declare an empty array to store image element
+            var fileNames = []; //Declare an empty element to store image file names
+            var imageList = []; //Declare an empty array to store html list that contain an image
+            var image; //Declare an empty variable to store the assembled image list codes
+            var openList = '<li id="photo">'; //Declare a variable to contain open list tag
+            var closeList = '</li>'; //Declare a variable to contain close list tag
+            var attribute = "class='photo'"; //Declare a variable to contain image attribute
 
+            //Create a loop to create 10 images starting with index of 0
+            for (var i = 0; i < 10; i++) {
+                fileNames.push("pet (" + (i + 1) + ")"); //create image file name
+                photos.push("<img src='images/pets/" + fileNames[i] + ".jpg'" + attribute + ">"); //assemble image code
+                image = openList + photos[i] + closeList; //assemble image list code
+                imageList.push(image); //Store(push) the assembled list code
+            }
+
+            //Display all ten image codes stored in the array
+            document.getElementById("gallery").innerHTML = imageList;
+        }
+
+        addPetGallery(); //Call the function to add images
     </script>
 </body>
 
