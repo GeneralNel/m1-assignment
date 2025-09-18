@@ -291,6 +291,7 @@ footer {
     width: 500px;
     height: 500px;
     margin-top: 40px;
+    margin-left: 40px;
 }
 
 .caption {
@@ -299,6 +300,24 @@ footer {
 }
 
 .description {
+    visibility: hidden;
     background-color: #ecf0f1;
     width: 400px;
+    padding: 10px;
+    position: absolute;
+    left: 80px;
+    bottom: 100px;
+}
+
+#gallery li {
+    display: inline-block;
+    position: relative;
+}
+
+#gallery li:hover {
+    cursor: pointer;
+}
+
+#gallery li:hover .description {
+    visibility: visible;
 }
