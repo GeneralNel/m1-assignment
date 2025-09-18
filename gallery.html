@@ -26,7 +26,6 @@
         </header>
 
         <main>
-            <img src="images/pets.jpg" alt="Pets Image" width="800" />
             <h1>Gallery</h1>
 
             <p>
@@ -68,6 +67,23 @@
             var openList = '<li id="photo">'; //Declare a variable to contain open list tag
             var closeList = '</li>'; //Declare a variable to contain close list tag
             var attribute = "class='photo'"; //Declare a variable to contain image attribute
+            var openCaptionTag = "<div class='caption'>"; //Declare a variable to contain open caption tag
+            var closeCaptionTag = "</div>"; //Declare a variable to contain close caption tag
+            var openDescTag = "<div class='description'>"; //Declare a variable to contain open description tag
+            var closeDescTag = "</div>"; //Declare a variable to contain close description tag
+            var captionTexts = ["Max", "Whiskers", "Zico", "Maya", "Buddy", "Luna", "Charlie", "Bella", "Rocky", "Lucy"]; //Declare an array to store caption text for each image
+            var descTexts = [
+                "Max is a friendly Labrador who loves to play fetch and go for long walks.",
+                "Whiskers is a curious Tabby cat who enjoys exploring new places and chasing toys.",
+                "Zico is a playful Maine Coon cat who loves to climb and cuddle.",
+                "Maya is a sweet Golden Retriever who loves to be around people and other dogs.",
+                "Buddy is a mischievous Beagle who enjoys sniffing around and going on adventures.",
+                "Luna is a beautiful Siamese cat who loves to lounge in the sun and watch the world go by.",
+                "Charlie is a playful Poodle who loves to show off his tricks and play fetch.",
+                "Bella is a gentle Rottweiler who is very loyal and protective of her family.",
+                "Rocky is a brave German Shepherd who loves to work and play hard.",
+                "Lucy is a cute Dachshund who loves to dig and explore her surroundings."
+            ];
 
             //Create a loop to create 10 images starting with index of 0
             for (var i = 0; i < 10; i++) {
