@@ -280,3 +280,15 @@ footer {
     font-size: 0.9em;
     text-align: center;
 }
+
+/* Gallery Styles */
+
+#gallery {
+    margin-top: 30px;
+}
+
+.photo {
+    width: 200px;
+    height: 200px;
+    margin-top: 40px;
+}
