@@ -38,6 +38,44 @@ function addPetGallery() {
 
     //Display all ten image codes stored in the array
     document.getElementById("gallery").innerHTML = imageList.join("");
+    
+    // Add click event listeners
+    addDescriptionClickListeners();
 }
 
-addPetGallery(); //Call the function to add images
+// Function to add click event listeners to description elements
+function addDescriptionClickListeners() {
+    // Add click event listener to each photo using getElementById
+    document.getElementById('photo1').addEventListener('click', function() {
+        showInfoBox(0);
+    });
+    document.getElementById('photo2').addEventListener('click', function() {
+        showInfoBox(1);
+    });
+    document.getElementById('photo3').addEventListener('click', function() {
+        showInfoBox(2);
+    });
+    document.getElementById('photo4').addEventListener('click', function() {
+        showInfoBox(3);
+    });
+    document.getElementById('photo5').addEventListener('click', function() {
+        showInfoBox(4);
+    });
+    document.getElementById('photo6').addEventListener('click', function() {
+        showInfoBox(5);
+    });
+    document.getElementById('photo7').addEventListener('click', function() {
+        showInfoBox(6);
+    });
+    document.getElementById('photo8').addEventListener('click', function() {
+        showInfoBox(7);
+    });
+    document.getElementById('photo9').addEventListener('click', function() {
+        showInfoBox(8);
+    });
+    document.getElementById('photo10').addEventListener('click', function() {
+        showInfoBox(9);
+    });
+}
+
+addPetGallery();
