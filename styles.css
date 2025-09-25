@@ -321,3 +321,45 @@ footer {
 #gallery li:hover .description {
     visibility: visible;
 }
+
+/* Popup info Box Styles */
+.info-box {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -150px;
+    margin-left: -250px;
+    background-color: #ffffff;
+    border: 3px solid #3498db;
+    border-radius: 10px;
+    padding: 20px;
+    visibility: hidden;
+    width: 500px;
+}
+
+.info-box h3 {
+    color: #2c3e50;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.info-box p {
+    color: brown;
+    text-align: center;
+}
+
+.info-box #closeInfo {
+    text-align: center;
+    color: #3498db;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+    border: 2px solid #3498db;
+    border-radius: 5px;
+    background-color: #ecf0f1;
+}
+
+.info-box #closeInfo:hover {
+    background-color: #3dabf5bd;
+    color: white;
+}
