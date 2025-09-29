@@ -363,3 +363,8 @@ footer {
     background-color: #3dabf5bd;
     color: white;
 }
+
+/* DropDown contact form */
+#emailInput, #phoneInput {
+    visibility: hidden;
+}
