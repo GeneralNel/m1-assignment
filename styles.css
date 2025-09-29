@@ -366,5 +366,5 @@ footer {
 
 /* DropDown contact form */
 #emailInput, #phoneInput {
-    visibility: hidden;
+    display: none;
 }

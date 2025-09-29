@@ -8,13 +8,13 @@ function showContactInput(event) {
     var selectedValue = event.target.value;
     console.log(selectedValue);
     if (selectedValue == "email") {
-        emailInput.style.visibility = "visible";
-        phoneInput.style.visibility = "hidden";
+        emailInput.style.display = "block";
+        phoneInput.style.display = "none";
     } else if (selectedValue == "phone") {
-        emailInput.style.visibility = "hidden";
-        phoneInput.style.visibility = "visible";
+        emailInput.style.display = "none";
+        phoneInput.style.display = "block";
     } else {
-        emailInput.style.visibility = "hidden";
-        phoneInput.style.visibility = "hidden";
+        emailInput.style.display = "none";
+        phoneInput.style.display = "none";
     }
 }
